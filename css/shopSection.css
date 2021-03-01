@@ -1,0 +1,86 @@
+body h1 {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body h1:hover {
+  color: pink;
+}
+
+body h2 {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body h2:hover {
+  color: pink;
+}
+
+body h3 {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body h3:hover {
+  color: pink;
+}
+
+body .shopSection .shop__firstColumn .box .firstWrapItems div {
+  background-color: #e7e7e7;
+  position: relative;
+  margin-right: 5px;
+}
+
+body .shopSection .shop__firstColumn .box .firstWrapItems div::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body .shopSection .shop__firstColumn .box .secondWrapItems div {
+  background-color: #e7e7e7;
+  position: relative;
+  margin-right: 5px;
+}
+
+body .shopSection .shop__firstColumn .box .secondWrapItems div::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body .shopSection .shop__secondColumn {
+  background-color: #e7e7e7;
+  position: relative;
+  margin-right: 0 !important;
+  width: 1000px;
+  height: 100%;
+  z-index: 11;
+  overflow: hidden;
+}
+
+body .shopSection .shop__secondColumn .img1 {
+  position: absolute;
+  top: 15%;
+  left: 2%;
+  height: 200px;
+}
+
+body .shopSection .shop__secondColumn .img2 {
+  position: absolute;
+  left: -0%;
+  height: 400px;
+  top: 10vh;
+  background-color: #e7e7e7;
+  z-index: -99;
+  height: 300px;
+}
+/*# sourceMappingURL=shopSection.css.map */

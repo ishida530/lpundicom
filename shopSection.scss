@@ -1,0 +1,82 @@
+body {
+  h1 {
+    transition: 0.4s;
+    &:hover {
+      color: pink;
+    }
+  }
+  h2 {
+    transition: 0.4s;
+    &:hover {
+      color: pink;
+    }
+  }
+  h3 {
+    transition: 0.4s;
+    &:hover {
+      color: pink;
+    }
+  }
+  .shopSection {
+    .shop__firstColumn {
+      .box {
+        .firstWrapItems {
+          div {
+            background-color: #e7e7e7;
+            position: relative;
+            margin-right: 5px;
+            &::before {
+              content: "";
+              width: 5px;
+              height: 5px;
+              background-color: red;
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+          }
+        }
+        .secondWrapItems {
+          div {
+            background-color: #e7e7e7;
+            position: relative;
+            margin-right: 5px;
+            &::before {
+              content: "";
+              width: 5px;
+              height: 5px;
+              background-color: red;
+              position: absolute;
+              top: 0;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+    .shop__secondColumn {
+      background-color: #e7e7e7;
+      position: relative;
+      margin-right: 0 !important;
+      width: 1000px;
+      height: 100%;
+      z-index: 11;
+      overflow: hidden;
+      .img1 {
+        position: absolute;
+        top: 15%;
+        left: 2%;
+        height: 200px;
+      }
+      .img2 {
+        position: absolute;
+        left: -0%;
+        height: 400px;
+        top: 10vh;
+        background-color: #e7e7e7;
+        z-index: -99;
+        height: 300px;
+      }
+    }
+  }
+}

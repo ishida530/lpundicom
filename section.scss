@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+body {
+  section {
+    margin-top: 20vh;
+
+    .section__firstColumn {
+      width: 100%;
+      h2 {
+        font-family: MultiDisplay-Regular;
+        font-size: 2rem;
+        line-height: 44px;
+      }
+      p {
+        font-family: MultiDisplay-Regular;
+        font-size: 14px;
+        line-height: 27px;
+        letter-spacing: 0.5px;
+      }
+      a {
+        border: 2px solid red;
+        padding: 13px 87px;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        background-color: transparent;
+        font-family: "Open Sans", sans-serif;
+        transition: 0.2s;
+        &:hover {
+          background-color: red;
+          color: white;
+        }
+      }
+    }
+    .section__secondColumn {
+      font-family: MultiDisplay-Regular;
+      font-weight: bold;
+      .redTittle {
+        color: red;
+      }
+      .wrapImg {
+        margin-top: 5%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    #section {
+      margin-top: 110vh;
+    }
+  }
+}

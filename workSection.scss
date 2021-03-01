@@ -1,0 +1,86 @@
+body {
+  .section__work {
+    margin-top: 10vh;
+    overflow-y: hidden;
+    background-position: center center;
+    position: relative;
+
+    background-image: linear-gradient(rgba(4, 5, 26, 0.8)),
+      url("../images/tlo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh, 120% 110vh;
+    .work__firstColumn {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+      &::before {
+        position: absolute;
+        bottom: 0;
+        left: -80%;
+        right: 50%;
+        height: 150px;
+
+        content: "";
+        display: block;
+        background-color: rgba(225, 0, 36, 0.8);
+      }
+    }
+    .work__secondColumn {
+      color: #fff;
+      div {
+        img {
+          transform: translateY(-5px);
+          width: 100px;
+          height: 130px;
+        }
+        h2 {
+          text-align: right;
+        }
+      }
+      .workBtn {
+        width: 100%;
+        border: 2px solid red;
+        height: 40px;
+        position: relative;
+        a {
+          color: #fff;
+          z-index: 9;
+          transition: 0.2s;
+
+          &:hover {
+            font-size: 18px;
+          }
+          text-decoration: none;
+          &::after {
+            text-align: right;
+            font-size: 25px;
+            content: ">";
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            position: absolute;
+            right: -5px;
+            padding-right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: 0.2s;
+          }
+        }
+        &:hover a::after {
+          width: calc(100% + 5px);
+          z-index: -9;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    .section__work {
+      padding-bottom: 10vh;
+    }
+  }
+}
